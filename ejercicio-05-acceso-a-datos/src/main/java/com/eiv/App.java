@@ -1,13 +1,14 @@
 package com.eiv;
 
-/**
- * Hello world!
- *
- */
+import javax.sql.DataSource;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        DataSource ds;
+        Conexion conn = new Conexion();
+        conn.conectar();
+        ds= conn.getDataSource();
     }
 }
