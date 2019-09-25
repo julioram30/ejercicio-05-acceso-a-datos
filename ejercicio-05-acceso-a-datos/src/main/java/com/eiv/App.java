@@ -7,10 +7,10 @@ public class App
     public static void main( String[] args )
     {
         DataSource ds;
-        Conexion conn = new Conexion();
-        conn.conectar();
+        ConexionMySQL conn = new ConexionMySQL();
+        conn.conectar("jdbc:mysql://localhost:3306/testjava","root","S1rm32nt4756","3306");
         ds= conn.getDataSource();
-        ds.
+
         
     }
 }
