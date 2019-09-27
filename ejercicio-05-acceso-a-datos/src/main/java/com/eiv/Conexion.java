@@ -1,11 +1,16 @@
 package com.eiv;
 
-import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.zaxxer.hikari.HikariDataSource;
 
 public interface Conexion {
 
-    public void conectar(String url,String user, String password,String port);
-    public DataSource getDataSource();
+    public Connection conectar(String url,String user, String password,String port) 
+            throws SQLException;
+    public HikariDataSource getDataSource();
     public void getStatus();
+   
     
 }
