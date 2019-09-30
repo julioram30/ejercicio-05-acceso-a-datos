@@ -7,12 +7,13 @@ import java.sql.SQLException;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-public class ConexionMySQL implements Conexion {
+public class ConexionMySql implements Conexion {
 
     final HikariConfig config = new HikariConfig();
 
     @Override
-    public Connection conectar(String url, String user, String password, String port) throws SQLException {
+    public Connection conectar(String url, String user, String password, String port) 
+            throws SQLException {
 
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.setJdbcUrl(url);

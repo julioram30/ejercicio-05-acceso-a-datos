@@ -28,8 +28,8 @@ public class ConexionMssql implements Conexion {
 
     @Override
     public HikariDataSource getDataSource() {
-        HikariDataSource ds = null;
-        return ds = new HikariDataSource(configMssql);
+        HikariDataSource ds = new HikariDataSource(configMssql);
+        return ds;
     }
 
     @Override

@@ -10,7 +10,7 @@ public class DatosMySql implements Datos {
     @Override
     public String show(String sql) {
 
-        ConexionMySQL myConn = new ConexionMySQL();
+        ConexionMySql myConn = new ConexionMySql();
         Connection con = null;
         
 
